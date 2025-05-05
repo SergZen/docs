@@ -35,7 +35,7 @@ Create a new `package.json` file with the below content. The main dependencies y
 ```json
 {
   "scripts": {
-    "test": "yarn run ts-mocha -p tsconfig.json -t 1000000 ./tests/main.ts"
+    "test": "yarn run ts-mocha -p tsconfig.json -t 1000000 main.ts"
   },
   "dependencies": {
     "@solana/web3.js": "^1.73.0",
@@ -59,7 +59,7 @@ After this, create a new file called `main.ts`. Import the necessary libraries a
 import { expect } from "chai";
 import {
     Connection,
-    Keypair,}
+    Keypair,
     LAMPORTS_PER_SOL,
     PublicKey,
     Transaction,
